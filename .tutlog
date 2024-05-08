@@ -1,0 +1,18 @@
+The easiest way to do liquids in Houdini! 19.5 FLIP SOP Solver (Yonni de Haar)
+https://www.youtube.com/watch?v=eBspZVCSv9Y
+
++ Very short and concise
++ Learned about ground plane in FLIP Solver SOP
+- Some subtle technical errors re: confusing meshing and SDF representation
+
+How to Simulate a Small Fountain (Mark Spevick)
+https://www.sidefx.com/tutorials/how-to-simulate-a-small-fountain/
+
++ Shows how to use the output of one FLIP sim as the input to another FLIP sim using FLIP Boundary SOP
++ Shows how to merge the output of two FLIP sims using VDBCombine SOP
++ Learned about Gas Stick on Collision DOP
++ Learned about indirect path guiding (preconstructed indirect diffuse approximation, just a checkbox)
+- Extremely long and drawn out
+- Absurd sim times, six substeps and 1.5 grid scale at 2 millimeters
+- TOPs chapter requires external download for ImageMagick TOP
+- TOPs chapter requires hacking LD_PRELOAD for OpenGL TOP (on CentOS 7)
