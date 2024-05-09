@@ -16,3 +16,17 @@ https://www.sidefx.com/tutorials/how-to-simulate-a-small-fountain/
 - Absurd sim times, six substeps and 1.5 grid scale at 2 millimeters
 - TOPs chapter requires external download for ImageMagick TOP
 - TOPs chapter requires hacking LD_PRELOAD for OpenGL TOP (on CentOS 7)
+
+Whitewater System (Omar Zarifi)
+https://www.sidefx.com/tutorials/houdini-17-masterclass-whitewater-system/
+
++ Incredible, best elaboration of the whitewater documentation I have watched
++ Easy to follow explanations of sourcing and render prep (vary desnity by both age and depth), ok coverage of solver forces
++ DIY mist solver at the end is worth the price of admission (just four nodes! Group, drag, noise, deathchance...)
++ Great hip file, learned about "Accumulated" mode for Volume Rasterize Attributes SOP, looks better than the default
+- Doesn't go into the details of colliders, which I think are only used for adhesion forces
+- Doesn't go into PBF tech underlying foam forces
+- Doesn't discuss custom repulsion shapes
+- Discusses both Whitewater Scale parameter and Emission Amount parameter but doesn't go into differences (scatter mult + physics vs. just scatter mult)
+- Spends a little too much time on the FLIP portion of the examples instead of dedicating all of the time to whitewater
+- Only discusses rendering whitewater as volumes, not points or meshes
