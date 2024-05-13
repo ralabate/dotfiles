@@ -32,6 +32,7 @@ https://www.sidefx.com/tutorials/houdini-17-masterclass-whitewater-system/
 - Only discusses rendering whitewater as volumes, not points or meshes
 
 Water & Ocean Rendering Using Houdini and Karma (Saber Jlassi)
+https://www.youtube.com/watch?v=NN0SbcReOek
 
 + Basic overview of what shelf oceans should look like rendered
 + Inspired me to learn more about the dicing process: shading quality of 1 means 1 micropolygon per pixel, can go less than one for speed
