@@ -30,3 +30,16 @@ https://www.sidefx.com/tutorials/houdini-17-masterclass-whitewater-system/
 - Discusses both Whitewater Scale parameter and Emission Amount parameter but doesn't go into differences (scatter mult + physics vs. just scatter mult)
 - Spends a little too much time on the FLIP portion of the examples instead of dedicating all of the time to whitewater
 - Only discusses rendering whitewater as volumes, not points or meshes
+
+Water & Ocean Rendering Using Houdini and Karma (Saber Jlassi)
+
++ Basic overview of what shelf oceans should look like rendered
++ Inspired me to learn more about the dicing process: shading quality of 1 means 1 micropolygon per pixel, can go less than one for speed
++ Inspired me to learn more about the dicing process: dicing flatness influences how refined "nearly flat" polygons get
++ Apparently Karma doesn't have any kind of new way (transmission scatter a la prman/arnold/3dl) of doing water interiors, they are using old-school method of rendering interior of ocean as volume
++ Have never thought about hiding ocean volume from primary ray, wonder why they do that...
++ Learned about blocking values with Properites Edit LOP
++ Learned basics of setting up Cryptomatte in Solaris
+- Doesn't talk at all about why you would use which whitewater rendering method; offline rasterization, points as discs, points as oriented discs, points as spheres and points as online rasterized
+- Doesn't discuss the foam workflow in the ocean shader
+- Doesn't really talk about water or what it should look like or references or anything, more a video about Karma nodes than anything else
