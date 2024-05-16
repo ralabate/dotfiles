@@ -44,3 +44,14 @@ https://www.youtube.com/watch?v=NN0SbcReOek
 - Doesn't talk at all about why you would use which whitewater rendering method; offline rasterization, points as discs, points as oriented discs, points as spheres and points as online rasterized
 - Doesn't discuss the foam workflow in the ocean shader
 - Doesn't really talk about water or what it should look like or references or anything, more a video about Karma nodes than anything else
+
+Bubbles Again: Simulating Soap Swirls Using FLIP (Moritz Schwind)
++
+-
+
+Bubbles Again: VEX Thinfilm Shader in Mantra (Moritz Schwind)
++ Cool use of specular color
++ Parenting backdrop to camera is the jam
+- Not so much a tutorial, as an explanation of porting an OSL shader to VEX
+- Uses OG ubershader, having a hard time porting it to PBR Non-Metallic VOP (reflections seem to stay white)
+- Downloadable project was missing key ingredient, thin film thickness texture
