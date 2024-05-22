@@ -55,3 +55,13 @@ Bubbles Again: VEX Thinfilm Shader in Mantra (Moritz Schwind)
 - Not so much a tutorial, as an explanation of porting an OSL shader to VEX
 - Uses OG ubershader, having a hard time porting it to PBR Non-Metallic VOP (reflections seem to stay white)
 - Downloadable project was missing key ingredient, thin film thickness texture
+
+Microsolver (Yem)
++ Good refresher on DOPs, lightning talk on setting up empty objects and attaching fields and solvers and visualizers
++ Interesting allusion to helmholz decomposition, but doesn't get into the details of computing pressure gradient
++ Intuitive explanation of why velocity field self-advects, it  has to preserve momentum
++ Clearer understanding now of difference between gasprojectnondivergent and gasprojectnondivergentmultigrid
+- Had a hard time understanding example where density is sourced into divergence, why does smoke stay?
+- Tried to visualize pressure scalar field in said example, to see what gasprojectnondivergent removed but empty
+
+Fluid Solver From Scratch
