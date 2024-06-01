@@ -65,3 +65,19 @@ Microsolver (Yem)
 - Tried to visualize pressure scalar field in said example, to see what gasprojectnondivergent removed but empty
 
 Fluid Solver From Scratch
+
+
+Houdini White Water Course -- Part 5 -- White Water Rendering (?)
+https://www.youtube.com/watch?v=I7UR-WEY30w
+
++ Simple point rendering of whitewater, use pscale in Geometry Op and Of in principled shader
+- Nothing about motion blur
+- Nothing about displacing along with your water surface
+
+Houdini White Water Course -- Part 4 -- White Water Repellents
+https://www.youtube.com/watch?v=zYX8kTHTQpA
+
++ Mentions the fact that you can't just pipe output of FLIP to Whitewater Source/Solver and have it work (use Compress Particle Fluid SOP to fix up volumes)
++ Decent settings for repellent noise (0.2 - 0.6) and strength (0 - 3)
+- Didn't cover noise pulse
+
