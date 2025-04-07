@@ -10,6 +10,7 @@ set path=.,,**
 set shortmess-=S
 set smartindent
 set tabstop=2 softtabstop=2 shiftwidth=2
+let mapleader = "\<Space>"
 
 " Use ripgrep to grep
 if executable('rg')
@@ -19,9 +20,17 @@ if executable('rg')
 	let g:ctrlp_use_caching = 0
 endif
 
+" Shortcut to buffer hop
+nnoremap <leader>b :ls<CR>:b<space>
+
+" Shortcut to buffer bop
+nnoremap <BS> <C-^>
+
+" Shorcut to buffer wipe
+nnoremap <leader>w :up \| %bd \| e#<CR>
+
 " Shortcut to grep word under cursor
-let mapleader = "\<Space>"
-nnoremap <leader>vv :grep! <cword><CR>:cwindow<CR>
+nnoremap <leader>g :grep! <cword><CR>:cwindow<CR>
 
 " Abbreviation to treat grep as silent grep
 cnoreabbrev <expr> grep  (getcmdtype() ==# ':' && getcmdline() =~# '^grep')  ? 'silent grep'  : 'grep'
@@ -33,8 +42,14 @@ augroup quickfix
     autocmd QuickFixCmdPost l* lwindow
 augroup END
 
+" Layout quickfix window underneath vertical splits
+au FileType qf wincmd J
+
 " TODO: Per-project vimrc files
 " set exrc
 
 " TODO: Figure out why default indentation in html is so bad
 " au FileType html,htmldjango setlocal indentexpr=
+
+" Light mode
+highlight Normal ctermfg=black ctermbg=white
