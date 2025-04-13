@@ -1,11 +1,5 @@
 # .bashrc
 
-# Source git status for prompt
-source /usr/share/doc/git/contrib/completion/git-prompt.sh
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
-PS1="🌖[\u@\h \W\$(__git_ps1)]$ "
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -31,34 +25,35 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Source git status for prompt
+source /usr/share/doc/git/contrib/completion/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+PS1="🌖[\u@\h \W\$(__git_ps1)]$ "
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-unalias ls
-unalias ll
-alias ll="ls -laph"
+export EDITOR=vim
+export VISUAL=vim
 
 HISTFILESIZE=
 HISTSIZE=1000000
+
+unalias ls
+unalias ll
 
 alias bc="bc -l"
 alias dirs="dirs -v"
 alias du='du --block-size=1G -d 1 .'
 alias h='run_houdini `ls *.hiplc -rt1 | tail -n1`'
 alias latest='find . -type f -cmin -$((60 * 24)) -printf "%T@ %Tc %p\n" | sort -n | cut -c 23-'
-alias o="gio open"
+alias ll="ls -laph"
 alias run_houdini="/opt/hfs20.5/bin/hindie"
 alias run_krita="/opt/krita/krita-5.2.9-x86_64.AppImage"
 alias run_godot="/opt/godot/Godot_v4.4-stable_linux.x86_64"
-
-# TODO
-# SUBSCREENRECORD VIA XRECTSEL                                                                 
-#alias screenrecord="/opt/ffmpeg-git-20220910-amd64-static/ffmpeg -f x11grab -i :0.0 -c:v prores -profile:v 0 -pix_fmt yuv422p10le grab.mov"
-
-export EDITOR=vim
-#export OCIO=/mnt/s/Resources/ocio/aces_1.2/config.ocio
-export VISUAL=vim
+alias screenrecord="ffmpeg -y -f x11grab -i :0.0 -c:v prores -profile:v 0 -pix_fmt yuv422p10le grab.mov"
 
 man() {
     env \
@@ -72,7 +67,31 @@ man() {
     man "${@}"
 }
 
-pushd -n /mnt/projects/Projects/around/around_frozen_field_pitchviz > /dev/null
+###################
+# Gnome Shortcuts #
+###################
+
+# Ctrl Alt c Chrome
+# Ctrl Alt f Firefox
+# Ctrl Alt h Houdini
+# Ctrl Alt k Krita
+# Ctrl Alt t Terminal
+# Super Alt d Draw On Your Screen
+
+# Print Screen (screenshot written to ~/Pictures)
+# Ctrl Print Screen (screenshot written to copy-paste buffer)
+# Ctrl Shift Print Screen (cropped screenshot written to copy-paste buffer)
+
+# F1 switch to workspace 1 (steals houdini selection type hotkey)
+# F2 switch to workspace 2 (steals rename hotkey)
+# F3 switch to workspace 3
+# F4 switch to workspace 4
+
+#################
+# Shot Launcher #
+#################
+
+pushd -n /mnt/projects/Projects/around/houdini-assets/around_frozen_field_pitchviz > /dev/null
 pushd -n /mnt/projects/Projects/public_library/30ddl > /dev/null
 pushd -n /mnt/projects/Projects/public_library/7drl > /dev/null
 pushd -n /mnt/projects/Projects/around/WebAR/client > /dev/null
@@ -84,15 +103,3 @@ pushd -n /mnt/projects/Projects/public_library/subwaycrawler > /dev/null
 pushd -n /mnt/projects/Projects/around/BASEBALL_01 > /dev/null
 pushd -n /mnt/projects/Projects/around/CARNIVAL_02 > /dev/null
 pushd -n /mnt/projects/Projects/around/CARNIVAL_01 > /dev/null
-
-# Gnome shortcuts
-# Ctrl Alt c Chrome
-# Ctrl Alt f Firefox
-# Ctrl Alt h Houdini
-# Ctrl Alt k Krita
-# Ctrl Alt t Terminal
-# Super Alt d (drawonyourscreen)
-
-# Print Screen (screenshot written to ~/Pictures)
-# Ctrl Print Screen (screenshot written to copy-paste buffer)
-# Ctrl Shift Print Screen (cropped screenshot written to copy-paste buffer)

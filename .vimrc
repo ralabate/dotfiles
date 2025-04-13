@@ -1,24 +1,31 @@
 " Current Plugins
 " CtrlP 2025_03_02
 
+" Aesthetic
+highlight Normal ctermfg=black ctermbg=white
 syntax off
 
+" File hop
+set path=.,,**
+
+" Tabs and wraps and underlines
 set cursorline
 set expandtab
 set nowrap
-set path=.,,**
 set shortmess-=S
 set smartindent
 set tabstop=2 softtabstop=2 shiftwidth=2
-let mapleader = "\<Space>"
 
 " Use ripgrep to grep
 if executable('rg')
   set grepprg=rg\ --hidden\ -H\ --no-heading\ --vimgrep
   set grepformat^=%f:%l:%c:%m
-	let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+	let g:ctrlp_user_command = 'rg %s -tts -tjson --files --color=never --glob ""'
 	let g:ctrlp_use_caching = 0
 endif
+
+" Shortcuts start with space
+let mapleader = "\<Space>"
 
 " Shortcut to buffer hop
 nnoremap <leader>b :ls<CR>:b<space>
@@ -44,12 +51,3 @@ augroup END
 
 " Layout quickfix window underneath vertical splits
 au FileType qf wincmd J
-
-" TODO: Per-project vimrc files
-" set exrc
-
-" TODO: Figure out why default indentation in html is so bad
-" au FileType html,htmldjango setlocal indentexpr=
-
-" Light mode
-highlight Normal ctermfg=black ctermbg=white
