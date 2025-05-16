@@ -1,4 +1,14 @@
-*
+/*
+
 !.gitignore
 !.bashrc
 !.vimrc
+
+!houdini20.5/
+houdini20.5/*
+!houdini20.5/houdini.env
+
+!.nuke
+.nuke/*
+!.nuke/init.py
+!.nuke/menu.py
