@@ -44,7 +44,6 @@ HISTSIZE=1000000
 unalias ls
 unalias ll
 
-alias bc="bc -l"
 alias dirs="dirs -v"
 alias du='du --block-size=1G -d 1 .'
 alias h='run_houdini `ls *.hiplc -rt1 | tail -n1`'
@@ -74,17 +73,13 @@ man() {
 ###################
 
 # Ctrl Alt c Chrome
-# Ctrl Alt f Firefox
 # Ctrl Alt h Houdini
-# Ctrl Alt k Krita
 # Ctrl Alt t Terminal
-# Super Alt d Draw On Your Screen
 
-# Print Screen (screenshot written to ~/Pictures)
-# Ctrl Print Screen (screenshot written to copy-paste buffer)
-# Ctrl Shift Print Screen (cropped screenshot written to copy-paste buffer)
+# Super D Show Desktop
+# Disable Compose Key
 
-# F1 switch to workspace 1 (steals houdini selection type hotkey)
+# F1 switch to workspace 1 (steals houdini selection type and python state help hotkeys)
 # F2 switch to workspace 2 (steals rename hotkey)
 # F3 switch to workspace 3
 # F4 switch to workspace 4
