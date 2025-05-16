@@ -7,6 +7,9 @@
 !houdini20.5/
 houdini20.5/*
 !houdini20.5/houdini.env
+!houdini20.5/scripts/
+houdini20.5/scripts/*
+!houdini20.5/scripts/123.py
 
 !.nuke
 .nuke/*
