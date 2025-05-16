@@ -5,6 +5,9 @@
 highlight Normal ctermfg=black ctermbg=white
 syntax off
 
+" Case insensitive search
+set ic
+
 " File hop
 set path=.,,**
 

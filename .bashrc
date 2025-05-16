@@ -50,9 +50,11 @@ alias du='du --block-size=1G -d 1 .'
 alias h='run_houdini `ls *.hiplc -rt1 | tail -n1`'
 alias latest='find . -type f -cmin -$((60 * 24)) -printf "%T@ %Tc %p\n" | sort -n | cut -c 23-'
 alias ll="ls -laph"
+alias n='run_nuke `ls *.nknc -rt1 | tail -n1`'
+alias run_godot="/opt/godot/Godot_v4.4-stable_linux.x86_64"
 alias run_houdini="/opt/hfs20.5/bin/hindie"
 alias run_krita="/opt/krita/krita-5.2.9-x86_64.AppImage"
-alias run_godot="/opt/godot/Godot_v4.4-stable_linux.x86_64"
+alias run_nuke="/opt/Nuke16.0v2/Nuke16.0"
 alias screenrecord="ffmpeg -y -f x11grab -i :0.0 -c:v prores -profile:v 0 -pix_fmt yuv422p10le grab.mov"
 
 man() {
@@ -91,6 +93,11 @@ man() {
 # Shot Launcher #
 #################
 
+pushd -n /mnt/projects/Projects/public_library/21dbl > /dev/null
+pushd -n /mnt/projects/Projects/around/houdini-assets/sportsbeach > /dev/null
+pushd -n /mnt/projects/Projects/public_library/21dgl > /dev/null
+pushd -n /mnt/projects/Projects/around/houdini-assets/gatorade > /dev/null
+pushd -n /mnt/projects/Projects/houdini-tutorial-solutions > /dev/null
 pushd -n /mnt/projects/Projects/around/houdini-assets/around_frozen_field_pitchviz > /dev/null
 pushd -n /mnt/projects/Projects/public_library/30ddl > /dev/null
 pushd -n /mnt/projects/Projects/public_library/7drl > /dev/null
