@@ -94,19 +94,4 @@ man() {
 #################
 
 pushd -n /mnt/projects/Projects/public_library/21dbl > /dev/null
-pushd -n /mnt/projects/Projects/around/houdini-assets/sportsbeach > /dev/null
-pushd -n /mnt/projects/Projects/public_library/21dgl > /dev/null
-pushd -n /mnt/projects/Projects/around/houdini-assets/gatorade > /dev/null
 pushd -n /mnt/projects/Projects/houdini-tutorial-solutions > /dev/null
-pushd -n /mnt/projects/Projects/around/houdini-assets/around_frozen_field_pitchviz > /dev/null
-pushd -n /mnt/projects/Projects/public_library/30ddl > /dev/null
-pushd -n /mnt/projects/Projects/public_library/7drl > /dev/null
-pushd -n /mnt/projects/Projects/around/WebAR/client > /dev/null
-pushd -n /mnt/projects/Projects/around/around_holographic_projection > /dev/null
-pushd -n /mnt/projects/Projects/around/around_line_portal_reveal > /dev/null
-pushd -n /mnt/projects/Projects/around/around_welcome_to_ar > /dev/null
-pushd -n /mnt/projects/Projects/around/around_home_run_fireworks> /dev/null
-pushd -n /mnt/projects/Projects/public_library/subwaycrawler > /dev/null
-pushd -n /mnt/projects/Projects/around/BASEBALL_01 > /dev/null
-pushd -n /mnt/projects/Projects/around/CARNIVAL_02 > /dev/null
-pushd -n /mnt/projects/Projects/around/CARNIVAL_01 > /dev/null
