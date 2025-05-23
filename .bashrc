@@ -74,6 +74,7 @@ man() {
 
 # Ctrl Alt c Chrome
 # Ctrl Alt h Houdini
+# Ctrl Alt n Nuke
 # Ctrl Alt t Terminal
 
 # Super D Show Desktop
