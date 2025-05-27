@@ -53,7 +53,7 @@ alias n='run_nuke `ls *.nknc -rt1 | tail -n1`'
 alias run_godot="/opt/godot/Godot_v4.4-stable_linux.x86_64"
 alias run_houdini="/opt/hfs20.5/bin/hindie"
 alias run_krita="/opt/krita/krita-5.2.9-x86_64.AppImage"
-alias run_nuke="/opt/Nuke16.0v2/Nuke16.0"
+alias run_nuke="/opt/Nuke16.0v2/Nuke16.0 --nc"
 alias screenrecord="ffmpeg -y -f x11grab -i :0.0 -c:v prores -profile:v 0 -pix_fmt yuv422p10le grab.mov"
 
 man() {
