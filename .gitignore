@@ -15,3 +15,4 @@ houdini20.5/scripts/*
 .nuke/*
 !.nuke/init.py
 !.nuke/menu.py
+!.nuke/preferences16.0.nk
