@@ -89,6 +89,8 @@ man() {
 # Shot Launcher #
 #################
 
+pushd -n /mnt/projects/Projects/around/WebAR/client > /dev/null
+pushd -n /mnt/projects/Projects/around/houdini-assets/stanleycup > /dev/null
 pushd -n /mnt/projects/Projects/talking_animals > /dev/null
 pushd -n /mnt/projects/Projects/public_library/21dbl > /dev/null
 pushd -n /mnt/projects/Projects/houdini-tutorial-solutions > /dev/null
